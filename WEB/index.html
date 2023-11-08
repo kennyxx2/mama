@@ -3,83 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/styles.css">
     <title>Document</title>
-</head>
-<script>
-    let teacher = {
-        surname: 'Михеева',
-        name: 'Татьяна',
-        patronymic: 'Александровна',
-        ocupation: 'Преподаватель специальных дисциплин',
-        degree: 'Высшее',
-        education: 'Московский государственный институт электронной техники (технический университет)',
-        qualification: 'Инженер-программист инфокоммуникационных систем',
-        specialty: 'Программное обеспечение радиоэлектронных систем',
-        discipline: ['Основы алгоритмизации и программирования', 'Компьютерная графика'],
-        category: prompt('Категория преподавателя:', 'Первая'),
-        experience: prompt('Стаж работы:', ' '),
-        email: prompt('E-mail:', 'vishnevskaya@gmail.com'),
-        site: prompt('Персональный сайт:', 'MayaGraphics.ru')
-    }
-</script>
+    <script type = "text/javascript" src="script.js"></script>
 </head>
 <body>
-<header>
-    <div class="div-header">
-        <nav class="main-menu">
-            <ul class="ul-menu">
-                <li><a href="#">О проекте</a></li>
-                <li><a href="#">Курсы</a></li>
-                <li><a href="#">Преподаватели</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+    <form name="forma3">
+        <input type="text" size="8" maxlength="8" name="st1">
+        <input type="text" size="8" maxlength="8" name="st2">
+        <input type="text" size="8" maxlength="8" name="st3"><br><br>
+        <input type="button" value="Вычислить" onClick="areaOfTriangle(forma3);">
+        <input type="reset" value="Отменить">
+        <input type="text" size="8" maxlength="8" name="res">
+        
 
-<main class="main-content">
-        <table class="table-main">
-            <tr>
-                <td>
-                    <img src="no-image.jpg" alt="soryy" width="400">
-                </td>
-                <td>
-                    <section class="info">
-                        <script>
-                            let conclusion = `
-                                <h1> ${teacher.surname} <br> ${teacher.name} ${teacher.patronymic} </h1>
-                                <p><h2> ${teacher.ocupation} </h2></p>
-                                <hr>
-                                <p><h3>Основная информация:</h3>
-                                    <ul>
-                                        <li><b>Уровень образования: ${teacher.degree}</b></li>
-                                        <li><b>Образование: ${teacher.education}</b></li>
-                                        <li><b>Квалификация: ${teacher.qualification}</b></li>
-                                        <li><b>Специализация: ${teacher.specialty}</b></li>
-                                        <li><b>Преподаваемые дисциплины:</b></li>
-                                        <ul class= "ul">
-                                            <li><b>${teacher.discipline[0]}</b></li>
-                                            <li><b>${teacher.discipline[1]}</b></li>
-                                        </ul>
-                                    </ul>
-                                </p>
-                                <p><h3>Дополнительная информация:</h3>
-                                    <ul>
-                                        <li><b>Категория: ${teacher.category}</b></li>
-                                        <li><b>Стаж: ${teacher.experience}</b></li>
-                                        <li><b>E-mail: ${teacher.email}</b></li>
-                                        <li><b>Персональный сайт: ${teacher.site}</b></li>
-                                    </ul>
-                                </p>
-                            `;
-                            document.write(conclusion);
-                        </script>
-                    </section>
-                </td>
-            </tr>
-        </table>
-</main>
-
+    </form>
+    
 </body>
 </html>
