@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var items = ['lie1', 'lie2', 'lie3', 'lie4', 'lie5'];
+
+        var Selectlist = document.createElement('select');
+        document.body.appendChild(Selectlist);
+
+        for (var i = 0; i < items.length; i++) {
+            var option = document.createElement('option');
+            option.value = i;
+            option.text = items[i];
+            Selectlist.appendChild(option);
+        }
+    </script>
+    
+</body>
+</html>
